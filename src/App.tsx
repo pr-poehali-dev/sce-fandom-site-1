@@ -8,6 +8,7 @@ import ObjectPage from "./pages/ObjectPage";
 import SeriesPage from "./pages/SeriesPage";
 import TalesPage from "./pages/TalesPage";
 import TaleDetailPage from "./pages/TaleDetailPage";
+import AboutFoundation from "./pages/AboutFoundation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,8 @@ const App = () => (
           <Route path="/contest-archive" element={<TalesPage />} />
           {/* Маршрут для отдельного рассказа */}
           <Route path="/tale/:taleId" element={<TaleDetailPage />} />
+          {/* Маршрут для страницы "О Фонде" */}
+          <Route path="/about-the-foundation" element={<AboutFoundation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
