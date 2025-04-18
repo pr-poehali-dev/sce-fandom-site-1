@@ -20,9 +20,9 @@ const Header = () => {
                   SCE Серии <ChevronDown size={14} />
                 </button>
                 <div className="absolute left-0 top-full z-20 bg-white text-sce-black shadow-lg w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                  <Link to="/series-i" className="block px-4 py-2 hover:bg-sce-gray">Серия I</Link>
-                  <Link to="/series-ii" className="block px-4 py-2 hover:bg-sce-gray">Серия II</Link>
-                  <Link to="/series-iii" className="block px-4 py-2 hover:bg-sce-gray">Серия III</Link>
+                  <Link to="/series/i" className="block px-4 py-2 hover:bg-sce-gray">Серия I</Link>
+                  <Link to="/series/ii" className="block px-4 py-2 hover:bg-sce-gray">Серия II</Link>
+                  <Link to="/series/iii" className="block px-4 py-2 hover:bg-sce-gray">Серия III</Link>
                 </div>
               </div>
               
@@ -66,9 +66,9 @@ const Header = () => {
             <div>
               <div className="font-medium mb-2">SCE Серии</div>
               <div className="pl-4 space-y-2">
-                <Link to="/series-i" className="block">Серия I</Link>
-                <Link to="/series-ii" className="block">Серия II</Link>
-                <Link to="/series-iii" className="block">Серия III</Link>
+                <Link to="/series/i" className="block">Серия I</Link>
+                <Link to="/series/ii" className="block">Серия II</Link>
+                <Link to="/series/iii" className="block">Серия III</Link>
               </div>
             </div>
             
