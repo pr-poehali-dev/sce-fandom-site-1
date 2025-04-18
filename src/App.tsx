@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import ObjectPage from "./pages/ObjectPage";
 import SeriesPage from "./pages/SeriesPage";
 import TalesPage from "./pages/TalesPage";
+import TaleDetailPage from "./pages/TaleDetailPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,10 +29,10 @@ const App = () => (
           {/* Маршруты для рассказов */}
           <Route path="/tales" element={<TalesPage />} />
           <Route path="/tales/:category" element={<TalesPage />} />
-          <Route path="/tales-by-series" element={<TalesPage />}>
-            <Route path="" element={<TalesPage />} />
-          </Route>
+          <Route path="/tales-by-series" element={<TalesPage />} />
           <Route path="/contest-archive" element={<TalesPage />} />
+          {/* Маршрут для отдельного рассказа */}
+          <Route path="/tale/:taleId" element={<TaleDetailPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
